@@ -1,6 +1,6 @@
 package org.example;
 
-public class Motocicleta extends Vehiculo {
+public class Motocicleta extends Vehiculo implements pagar {
 
 
 
@@ -19,5 +19,12 @@ public class Motocicleta extends Vehiculo {
         this.cilindraje = cilindraje;
     }
 
+    @Override
+    public double calcularPago(int horas) {
+        double totalMoto=0;
+
+        totalMoto=horas*5000;
+        return totalMoto;
+    }
 }
 

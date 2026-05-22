@@ -1,6 +1,6 @@
 package org.example;
 
-public  abstract class Vehiculo {
+public  abstract class Vehiculo implements pagar {
 
     private String placa;
     private String nombreConductor;

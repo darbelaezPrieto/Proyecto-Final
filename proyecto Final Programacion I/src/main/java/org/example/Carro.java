@@ -1,6 +1,6 @@
 package org.example;
 
-public class Carro extends Vehiculo {
+public class Carro extends Vehiculo implements pagar {
 
 
     private int numeroPuertas;
@@ -20,4 +20,11 @@ public class Carro extends Vehiculo {
     }
 
 
+    @Override
+    public double calcularPago(int horas) {
+        double totalCarro=0;
+
+        totalCarro=horas*10000;
+        return totalCarro;
+    }
 }
