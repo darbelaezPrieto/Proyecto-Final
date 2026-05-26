@@ -25,7 +25,8 @@ public class Main {
             while (opcion != 5) {
 
                 String texto = JOptionPane.showInputDialog(
-
+                              "Parqueadero UQ\n"
+            +
                                 "MENU\n\n"
 
                                         + "1. Registrar ingreso\n"
@@ -174,6 +175,8 @@ public class Main {
 
                         JOptionPane.showMessageDialog(null, "Opcion invalida");
                 }
+
+
             }
         }
     }
